@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'dva'
 import { Route, Link, Redirect } from 'dva/router'
-import LoginComponent from '../../components/LoginComponent'
+import { LoginComponent } from '../../components/'
 const AuthorizedLayout =  ({ match, isLogin, history }) => {
   if (isLogin) {
     return <Redirect to='/' />
